@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './AmountBox.css';
 
 class AverageExpense extends React.Component{
     render(){
@@ -6,10 +7,14 @@ class AverageExpense extends React.Component{
         const averageExpense = this.props.averageExpense;
 
         return(
-            <h1>Average Expense: {averageExpense}</h1>
+            <div className="amountBox">
+                <p className="header">Average</p>
+                <h1 className="middle">{averageExpense}</h1>
+                <p className="footer">Daily</p>
+            </div>
         );
 
     }
 }
 
-export default AverageExpense;
+export default AverageExpense; 

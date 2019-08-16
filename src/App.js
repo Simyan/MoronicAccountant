@@ -2,18 +2,34 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AverageExpense from './AverageExpense';
+import ChartComponent from './ChartComponent';
 
 class Appfoo extends Component {
 
-render(){
-  return (
-    <div>
-      <AverageExpense averageExpense = {50} />
-      <AverageExpense averageExpense = {90} />
-    </div>
-    
-  )
-}
+  render() {
+    return (
+      <div className="Container">
+
+        <div className="statsBarContainer">
+        <AverageExpense averageExpense = {50} />
+          
+        </div>
+        <div className="purchaseDetailsContainer">
+        <AverageExpense averageExpense = {50} />
+        </div>
+        <div className="graphContainer">
+        <ChartComponent/>
+        </div>
+
+
+      </div>
+      // <div>
+      //   <AverageExpense averageExpense = {50} />
+      //   <AverageExpense averageExpense = {90} />
+      //   <ChartComponent/>
+      // </div>
+    )
+  }
 
 
 
